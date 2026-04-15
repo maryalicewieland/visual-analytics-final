@@ -1,1 +1,36 @@
+body {
+    /* temporary fonts, I can download the smith college standard ones and implement later*/
+    font-family:Arial, Helvetica, sans-serif;
+}
 
+.tabs {
+    display: flex;
+    gap: 2px;
+    margin-bottom: 10px;
+}
+
+.tab {
+    padding: 8px 16px;
+    border: 2px solid #e8e8e8;
+    background: #eee;
+    cursor: pointer;
+    border-top-left-radius: 8px;
+    border-top-right-radius: 8px;
+    border-bottom: none;
+    font-size: 16px;
+}
+
+/* style tab buttons to look like actual tabs */
+.tab.active {
+    background: white;
+    font-weight: bold;
+}
+
+/* don't display if not active */ 
+.content {
+    display: none;
+}
+
+.content.active {
+    display: block;
+}

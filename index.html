@@ -9,6 +9,32 @@
 </head>
 <body>
     <h1>Smith College Transportation Emissions</h1>
-    
+
+    <!--
+    Code to instantiate a tab container and the two tabs inside of it. This way we can hide and show the tabs when we click on each one (hide total emissions when we look at just scope 3 for example)
+    -->
+    <div class="tab-container">
+        <!--Make the tab markers themselves-->
+        <div class="tabs">
+            <button class="tab active" data-tab="total">Overall Emissions</button>
+            <button class="tab" data-tab="scope3">Transportation Emissions</button>
+        </div>
+
+        <!--what's actually in the tabs-->
+        <div class="tab-content">
+            <!--divs and svg for the total graphs (which are shown by default)-->
+            <div id="total" class="content active">
+                <svg id="total-chart"></svg>
+            </div>
+
+            <!--divs and svg for the scope 3 graph (which is not shown by default)-->
+            <div id="scope3" class="content">
+                <svg id="scope3-chart"></svg>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="index.js"></script>
 </body>
 </html>
