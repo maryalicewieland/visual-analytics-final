@@ -10,40 +10,6 @@ h1 {
     padding: 10px;
 }
 
-/* styles tab container */
-.tabs {
-    display: flex;
-    gap: 2px;
-    margin-bottom: 10px;
-}
-
-/*styles for individual tabs*/
-.tab {
-    padding: 8px 16px;
-    border: 2px solid #e8e8e8;
-    background: #eee;
-    cursor: pointer;
-    border-top-left-radius: 8px;
-    border-top-right-radius: 8px;
-    border-bottom: none;
-    font-size: 16px;
-}
-
-/* style tab buttons to look like actual tabs */
-.tab.active {
-    background: white;
-    font-weight: bold;
-}
-
-/* don't display if not active */ 
-.content {
-    display: none;
-}
-
-.content.active {
-    display: block;
-}
-
 header {
     text-align: center;
     margin-bottom: 30px;
@@ -64,7 +30,7 @@ header {
 
 section {
     max-width: 900px;
-    margin: 30px auto;
+    margin: 100px auto;
     padding: 0 20px;
     text-align: left;
 }
@@ -78,13 +44,18 @@ h2 {
 }
 
 .scope3{
-    padding-top: 20px;   
+    padding-top: 50px;
+    
 }
 
 .chart-row {
+    padding-top: 20px;
     display: flex;
-    gap: 20px;
+    gap: 40px;
     align-items: flex-start;
+    margin-left: 20px;
+    padding-bottom: 50px;
+    
 }
 
 .legend-row {
@@ -112,5 +83,6 @@ h2 {
 }
 
 #pie-chart {
+    margin-left: 200;
     margin-top: 25px;
 }
