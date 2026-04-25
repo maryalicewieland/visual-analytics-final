@@ -1,46 +1,36 @@
 body {
     /* temporary fonts, I can download the smith college standard ones and implement later*/
     font-family:Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+img {
+    width: 300px;
+    height: auto;
+    margin: 20px;
+
 }
 
 h1 {
+    font-family: "Lora", serif;
+    font-weight: 500;
+    font-size: 36px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    max-width: 800px;
+    color: #0B2A50;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
 }
 
-header {
-    text-align: center;
-    margin-bottom: 30px;
-}
-.header-box {
-    background-color: rgb(6, 97, 243); 
-    color: white;
-    padding: 20px 40px;
-    border-radius: 10px;
-}
-.header-box h1, .header-box p {
-    margin: 5px 0;
-}
-.subtitle {
-    color: #0d0d0d; 
-    font-weight: bold;
-}
-
 section {
     max-width: 900px;
-    margin: 100px auto;
+    margin: 50px auto;
     padding: 0 20px;
     text-align: left;
-}
-
-h2 {
-    text-align: center;
-    color: #010101;
-    border-left: 5px solid #0e0d0d;
-    padding-left: 10px;
-    display: inline-block;
 }
 
 .scope3{
@@ -86,3 +76,5 @@ h2 {
     margin-left: 200;
     margin-top: 25px;
 }
+
+/* fonts */
