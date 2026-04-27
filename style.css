@@ -1,8 +1,17 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+
 body {
-    /* temporary fonts, I can download the smith college standard ones and implement later*/
     font-family: "Google Sans Flex", sans-serif;
     font-size: 18px;
     font-weight: 300;
+    min-height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 img {
@@ -35,7 +44,7 @@ h3 {
 
 section {
     max-width: 900px;
-    margin: 50px auto;
+    margin: 20px auto;
     padding: 0 20px;
     text-align: left;
 }
@@ -43,11 +52,23 @@ section {
 footer {
     background-color: #0B2A50;
     color: white;
-    padding: 3px;
-    font-size: 12px;
     width: 100%;
+    margin-top: 60px;
+    padding: 24px 20px;
+    text-align: center;
+    font-size: 14px;
+    line-height: 1.5;
+    box-sizing: border-box;
 }
 
+footer p {
+    margin: 0;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* make the bold actually bold */
 b {
     font-weight: 550;
 }
@@ -104,10 +125,3 @@ b {
     font-size: 16px;
     color:rgb(83, 83, 83);
 }
-
-#pie-chart {
-    margin-left: 200;
-    margin-top: 25px;
-}
-
-/* fonts */
