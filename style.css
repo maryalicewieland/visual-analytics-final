@@ -42,7 +42,7 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    max-width: 900px;
+    max-width: 1000px;
     font-size: 36px;
     font-weight: 450;
     transform: scaleY(1.05); /* Stretches height by 150% */    
@@ -118,7 +118,7 @@ b {
 }
 
 .chart-row {
-    padding-top: 20px;
+    padding-top: 30px;
     display: flex;
     align-items: flex-start;
     margin-left: 20px;

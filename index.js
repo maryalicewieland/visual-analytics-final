@@ -31,8 +31,8 @@ function drawTotalChart() {
 
     const svg = d3.select(svgID);
     const width = 600;
-    const height = 400;
-    const margin = { top: 20, right: 30, bottom: 40, left: 80 };
+    const height = 450;
+    const margin = { top: 50, right: 30, bottom: 40, left: 80 };
 
     svg.attr("width", width).attr("height", height);
 
@@ -99,6 +99,13 @@ function drawTotalChart() {
         .attr("y", margin.left - 60)
         .text("MTCO2e");
 
+    svg.append("text")
+        .attr("x", width / 2)
+        .attr("y", margin.top / 2)
+        .attr("text-anchor", "middle")
+        .style("font-size", "20px")
+        .text("Total Emissions by Fiscal Year (2009–2024)");
+        
     const legend = svg.append("g")
         .attr("transform", `translate(${width - margin.right - 120}, ${margin.top})`);
         
@@ -128,8 +135,8 @@ function drawTimeChart() {
     clearChart(svgID);
     const svg = d3.select(svgID);
     const width = 600; 
-    const height = 400; 
-    const margin = { top: 20, right: 30, bottom: 40, left: 80 };
+    const height = 450; 
+    const margin = { top: 50, right: 30, bottom: 40, left: 80 };
     svg.attr("width", width).attr("height", height);
 
     d3.csv("data/total.csv").then(function(data) {
@@ -269,6 +276,13 @@ function drawTimeChart() {
             .attr("font-size", "12px")
             .text(d => d);
             });
+
+        svg.append("text")
+            .attr("x", width / 2)
+            .attr("y", margin.top / 2)
+            .attr("text-anchor", "middle")
+            .style("font-size", "20px")
+            .text("Trend in Emissions by Fiscal Year (2009–2024)");
 
 }
 
