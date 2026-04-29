@@ -59,19 +59,18 @@ h2 {
     justify-content: center;
     align-items: center;
     max-width: 900px;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: 80;
 }
 
 h3 {
-    font-family: 'Aftika', sans-serif;
-    font-size: 26px;
+    font-family: Georgia, serif;
+    font-size: 30px;
     display: flex;
     color: #000000;
-    justify-content: center;
-    align-items: center;
+    align-items: left;
     font-weight: 100;
-    padding: 30px;
+    padding: 0px;
 }
 
 section {
@@ -168,3 +167,20 @@ b {
     font-size: 16px;
     color:rgb(83, 83, 83);
 }
+
+.divider {
+    width: 900px;
+    margin: 10px auto;
+    padding: 40 40px;
+    border: none;
+    border-top: 5px dotted #333;
+}
+
+.conclusion {
+    width: 900px;
+    margin: 10px auto;
+    padding: 40 40px;
+    border-top: 5px dotted #333;
+    background-color: #FFF9AE;
+}
+
